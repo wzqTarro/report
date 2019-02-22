@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.zcareze</groupId>
+        <artifactId>zcareze-service</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>zcareze-report</artifactId>
+    <packaging>pom</packaging>
+    <name>${project.artifactId}</name>
+
+    <url>http://www.zcareze.com</url>
+    <inceptionYear>2016</inceptionYear>
+    <description>zcareze report project</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <modules>
+        <module>zcareze-report-common</module>
+        <module>zcareze-report-base</module>       
+        <module>zcareze-report-data</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>${servlet_version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <!-- commons -->
+            <dependency>
+                <groupId>com.zcareze</groupId>
+                <artifactId>zcareze-commons</artifactId>
+                <version>${project.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <!-- data -->
+            <dependency>
+                <groupId>com.zcareze</groupId>
+                <artifactId>zcareze-data</artifactId>
+                <version>${project.version}</version>
+                <scope>provided</scope>
+            </dependency>           
+            <!-- spring -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>${spring_version}</version>
+                <scope>provided</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

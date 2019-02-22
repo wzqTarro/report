@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.zcareze</groupId>
+		<artifactId>zcareze-report-base</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>zcareze-report-base-service</artifactId>
+	<packaging>jar</packaging>
+	<name>${project.artifactId}</name>
+
+	<url>http://www.zcareze.com</url>
+	<inceptionYear>2016</inceptionYear>
+	<description>zcareze basereport service project</description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.zcareze</groupId>
+			<artifactId>zcareze-report-base-interface</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.zcareze</groupId>
+			<artifactId>zcareze-report-base-domain</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.zcareze</groupId>
+			<artifactId>zcareze-report-base-dao</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.zcareze</groupId>
+			<artifactId>zcareze-file-interface</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.zcareze</groupId>
+			<artifactId>zcareze-regional-interface</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.zcareze</groupId>
+			<artifactId>zcareze-report-common</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<!-- servlet -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+		</dependency>
+		<!-- commons -->
+		<dependency>
+			<groupId>com.zcareze</groupId>
+			<artifactId>zcareze-commons</artifactId>
+		</dependency>
+		<!-- data -->
+		<dependency>
+			<groupId>com.zcareze</groupId>
+			<artifactId>zcareze-data</artifactId>
+		</dependency>
+		<!-- spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.zcareze</groupId>
+			<artifactId>zcareze-token-interface</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<!-- 新框架的组织机构服务 -->
+		<dependency>
+			<groupId>com.zcareze</groupId>
+			<artifactId>zcareze-org-service</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.zcareze</groupId>
+			<artifactId>zcareze-cache-interface</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>
